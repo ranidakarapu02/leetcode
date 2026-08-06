@@ -6,6 +6,6 @@ class Solution:
         total=0
         for i in range(n):
             total+=costs[i][0]
-        for i in range(n,2*n):
-            total+=costs[i][1]
+            total+=costs[i+n][1]
         return total
+    
